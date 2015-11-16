@@ -1,9 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Sample "Hello, World" Application</title>
+	<link rel="stylesheet" href="resources/css/app.css" type="image/png"/>
+	<meta charset="utf-8">
+	<script data-main="main" src="../node_modules/requirejs/require.js"></script>
+	<title>MyWallet</title>
 </head>
-<body>
-	Hello World!
+<body class="flex-container" data-ng-app="myWallet" data-ng-controller="mwController as mwCtrl">
+	<header class="flex-item">
+		<h3>MyWallet</h3>
+	</header>
+	<section class="flex-item">
+		<data-mw-login-view></data-mw-login-view>
+	</section>
+	<footer class="flex-item">© sb-2015</footer>
 </body>
-</html>
+</html>>
